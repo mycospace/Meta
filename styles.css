@@ -1,0 +1,136 @@
+/* Grundlegender Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body und Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Übungsbereich */
+#exercise-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#exercise-section h2 {
+  margin-bottom: 10px;
+}
+
+/* Übungstext */
+#exercise-text {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* Button Container */
+#buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Button-Styling */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Favoriten Section */
+#favorites-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#favorites-section h2 {
+  margin-bottom: 10px;
+}
+
+#favorites-list {
+  list-style-type: none;
+}
+
+#favorites-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#favorites-list li:last-child {
+  border-bottom: none;
+}
+
+#favorites-list button {
+  background-color: #dc3545;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+#favorites-list button:hover {
+  background-color: #c82333;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  button {
+    width: 100%;
+  }
+}
